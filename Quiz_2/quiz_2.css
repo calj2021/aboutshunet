@@ -1,0 +1,83 @@
+
+body {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: url(images/quiz_bg.jpg) no-repeat center center/cover;
+}
+
+.Quiz-Container {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  flex-direction: column; /* This will stack the divs vertically */
+  width: 500px;
+  height: 400px;
+  background-color: rgb(198, 200, 200);
+  border-radius: 10px;
+}
+
+#question {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#answer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#answer {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
+li {
+  list-style-type: none; /* Removes the bullets */
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+#submit {
+  background-color: rgb(220, 220, 220);
+  width: 80px;
+  height: 30px;
+  font-size: 1rem;
+  padding: 3px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#submit:hover {
+  color: white;
+  background-color: rgb(238, 5, 5);
+}
+
+#score {
+  background-color: yellowgreen;
+  opacity: 0;
+  width: 120px;
+  height: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 50px;
+}

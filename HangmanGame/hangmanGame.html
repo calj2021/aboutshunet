@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Hang Mang
+    </title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(201, 224, 224);
+        padding-left: 20px;
+      }
+
+      h2, p {
+        display: flex;
+        justify-content: center;
+      }
+
+      .custom-button {
+        width: 40px;
+        height: 40px;
+        border: solid 1px rgb(156, 147, 147);
+        background-color: rgb(212, 255, 0);
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 5px rgba(255, 199, 199, 0.5);
+      }
+
+      .custom-button:disabled {
+        background-color: rgb(165, 165, 135);
+      }
+
+      .input-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .cartoon-container{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        height: 300px;
+        border: dashed 2px black;
+        margin-bottom: 30px;
+      }
+     
+      .btm-button {
+        width: 130px;
+        height: 30px;
+        border: solid 2px rgb(156, 147, 147);
+        background-color: rgb(221, 227, 177);
+        font-size: larger;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 4px;
+      }
+
+      .guess-hint {
+        color:rgb(0, 57, 0);
+        font-size: larger;
+        font-style: bold;
+      }
+      
+      .hidden-letters{
+        font-size: xx-large;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <h2>HANGMAN</h2>
+    <p>Use the alphabet below to guess the word, or click hint to get a clue.</p>
+
+    <div id="button-container">
+      <!-- Buttons will be appended here -->
+    </div>
+
+    <div class="input-container" id="display">
+      <div>
+        <div class="guess-hint guess-hint-qs">
+  
+        </div>
+      </div>
+      <div class="cartoon-container" id="hang-man">
+        <canvas id="myCanvas" width="400" height="300">
+
+        </canvas>
+        
+      </div> 
+      
+      <div>
+      <button class="btm-button">Hint</button>  
+      <button class="btm-button" onclick="location.reload();">Play again</button>
+      
+      </div>
+    </div>  
+
+    <script type="module" src="hangmanGameScript.js"></script>
+  </body>
+
+</html> 

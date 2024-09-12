@@ -1,0 +1,68 @@
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* background: url(images/IMG_2653.jpeg) no-repeat center center/cover; */
+  height: 100vh;
+  background-size: cover;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+
+}
+
+button {
+  color: #3b3a3a;
+  width: 100px;
+  background: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+}
+
+.nev-bar {
+  position: absolute;
+  top: 30px;
+  border-bottom: 2px solid gray;
+}
+
+.body-panel{
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  gap: 10px;
+  justify-content: left;
+
+
+}
+
+.body-panel img {
+  width: 180px; /* Fixed width */
+  height: 180px; /* Fixed height */
+  object-fit: cover; /* Ensures image covers the box, without distortion */
+  display: block;
+  border: solid black 1px;
+
+}
+
+.front_image {
+  margin-top: 100px;
+  position: absolute;
+}
+
+.textbox {
+  margin-top: 100px;
+  position: absolute;
+}
+.nev-bar a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use inherited color */
+}
+
+.nev-bar a button {
+  padding: 5px 10px; /* Adjust padding as needed */
+  margin: 0; /* Remove margin */
+}

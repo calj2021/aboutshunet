@@ -1,0 +1,19 @@
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+
+
+.game-board-css {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1px;
+  row-gap: 1px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0px 0px 8px rgba(94, 94, 246, 0.8);
+}
